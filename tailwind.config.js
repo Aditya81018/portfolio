@@ -53,5 +53,18 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("tailwindcss-animate"),
+    function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-glow": (value) => ({
+            filter: `drop-shadow(0 0 3px rgba(255, 255, 255, ${value}))`,
+          }),
+        },
+        { values: theme("opacity") } // Enables usage like `text-glow-[3px]`
+      );
+    },
+  ],
 };
