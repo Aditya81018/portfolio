@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import FancyText from "@/components/fancy-text";
@@ -36,12 +35,11 @@ export default function ProjectsSection() {
           <FancyText>Projects</FancyText>
         </H1>
         <Spacer size="2xl" />
-        <Row>
+        <Row wrap className="gap-1 md:gap-2" align="center" justify="center">
           {Object.values(SKILLS).map((tag, key) => (
             <Button
               key={key}
-              size={"sm"}
-              className="rounded-full"
+              className="rounded-full text-xs px-2 py-1 md:text-sm h-fit"
               variant={selectedTag.includes(tag) ? "default" : "outline"}
               onClick={() =>
                 setSelectedTag((val) =>
