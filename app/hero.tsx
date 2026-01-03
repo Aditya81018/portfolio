@@ -18,7 +18,7 @@ export default function HeroSection() {
     // Hero Section
     <Section fullScreen className="snap-center">
       <Container fullHeight align="center" justify="center">
-        <Row justify="center" gap="xl" className="max-md:flex-col">
+        <Row justify="center" gap="xl" className="max-lg:flex-col">
           <Column className="w-full">
             <H1 className="max-sm:text-center">
               Hey! I&apos;m a{" "}

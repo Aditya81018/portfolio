@@ -4,8 +4,8 @@ import { ShadcnUiDark } from "./shadcnUiDark";
 export default function ShadcnUiSvg() {
   return (
     <>
-      <ShadcnUi className="not-dark:hidden" />
-      <ShadcnUiDark className="dark:hidden" />
+      <ShadcnUi className="dark:hidden" />
+      <ShadcnUiDark className="not-dark:hidden" />
     </>
   );
 }

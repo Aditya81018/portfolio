@@ -111,16 +111,6 @@ const PROJECTS: { [key: string]: Project } = {
       SKILLS.genAi,
     ],
   },
-
-  example1: ExampleProject,
-  example2: ExampleProject,
-  example3: ExampleProject,
-  example4: ExampleProject,
-  example5: ExampleProject,
-  example6: ExampleProject,
-  example7: ExampleProject,
-  example8: ExampleProject,
-  example9: ExampleProject,
 };
 
 export default PROJECTS;
